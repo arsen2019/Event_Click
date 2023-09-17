@@ -4,13 +4,74 @@
         <meta charset="UTF-8">
         <title>Title</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
+
         <div class="searchbar">
-            <form action="", class="search-form">
-                <input type="text" placeholder="Search">
-                <button type="submit" ><img src="static/img/icons/search_icon.png"></button>
-            </form>
+             <div class="blank">
+
+            </div>
+            <div class="search-div">
+                <form action="", class="search-form">
+                    <input type="text" placeholder="Search">
+                    <button type="submit" ><img src="static/img/icons/search_icon.png"></button>
+                </form>
+            </div>
+
+            <div class="phone_div">
+                <img src="static/img/icons/phone_icon.png">
+                <div class="phone_number">
+                    <p>+374000001</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="logo_div"><img src="static/img/icons/logo_icon.png"  class="logo_img"></div>
+            <div class="nav_links">
+                <nav>
+                    <a href="#" class="nav_items">Shop</a>
+                    <a href="#" class="nav_items">Blog</a>
+                    <a href="#" class="nav_items">About</a>
+                    <a href="#" class="nav_items">Contact</a>
+                </nav>
+            </div>
+            <div class="login"><button class="login_button">Log In</button></div>
+        </div>
+        <div class="main">
+            <p>ԱյՍՔԱՆԸ ԿԼՑՆԻ ԲԱԶԿԻԹԱՌԻՍՏ. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ․ ․ ․ ․ ․ ․ ․ ․ ՆԻԿՈԼԱՅԸ</p>
+        </div>
+        <div class="footer">
+            <div class="content">
+                <div class="newsletter">
+                    <h1>Join the newsletter</h1>
+                    <p>Join the group of people who receive access to a dose of expert knowledge every month.</p>
+                </div>
+                <div class="subscription">
+                    <label class="email_adress_label">Email Adress*</label>
+                    <span></span>
+                    <div class="email_input_div">
+                        <input class='email_input'type="text" placeholder="Your Email Adress">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                     <input class="subscription_checkbox" type="checkbox" id="CheckEmail" name="CheckEmail">
+                    <label for="CheckEmail" class="chek_email_label">Partner with us to unlock the full potential of your digital </label>
+
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="copyright_p">
+                    <p>COPYRIGHT©TOPSOFT  2023.</p>
+                    <p>Our website uses cookies to improve your experience. If you want to opt-out please click here.</p>
+                </div>
+                <div class="map_site">
+                    <a href="#">Site Map</a>
+                </div>
+            </div>
+
         </div>
 
     </body>
