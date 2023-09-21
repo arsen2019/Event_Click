@@ -1,19 +1,29 @@
+@font-face {
+    font-family: 'Supply';
+    src: url('fonts/Supply-Regular.ttf');
+    font-weight: 400,500,600,700;
+    font-style: normal;
+    font-display: swap;
+
+
+}
+
 body{
-    max-width:1920px;
+    width:1920px!important;
     width:100%;
     margin:0;
     color:#333;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Supply';
 
 }
 
 /* __________________SEARCH BAR ___________________*/
 .searchbar{
-    width:100%;
+   /* width:1740px;*/
     display:flex;
     align-items:center;
-    justify-content:space-between;
-    max-width: 1200px;
+    justify-content:space-around;
+    /*max-width: 1200px;*/
     margin:10px auto;
 }
 .search-div{
@@ -67,6 +77,7 @@ body{
 }
 /*_____________________NAVBAR____________________________*/
 .navbar{
+    /*width:1740px;*/
     display:flex;
     justify-content:space-around;
     align-items:center;
@@ -126,10 +137,93 @@ body{
 
 .main{
     margin: 0 auto;
-    height:1000px;
-    width:1200px;
-    font-size:100px;
-    font-weight:500;
+    width:1740px;
+
+}
+.section_headers{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+
+}
+.triple_container{
+    padding-top:40px;
+    display:flex;
+    justify-content:space-between;
+    border-top:1px solid #D4D4D4;
+}
+.wine_cards{
+    width:560px;
+}
+.wine_item{
+    display:flex;
+
+    height:520px;
+    justify-content:center;
+    border: 1px solid #EBEBEB;
+}
+.wine_img{
+    width:190px;
+    height:500px;
+}
+.about_wine_h1{
+    width:470px;
+    margin:0;
+    color: #8B8B8B;
+    /*font-family: Supply;*/
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.bold{
+    font-weight: 400;
+    color: #000;
+}
+.moto{
+    width:350px;
+     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-bottom:3px solid #8B8B8B;
+}
+.wine_card_about{
+    margin-top:5px;
+    border: 1px solid #EBEBEB;
+    padding:20px 15px;
+}
+.wine_card_about_header{
+    display:flex;
+    justify-content:space-between;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.wine_card_about_header h3{
+    font-weight:400;
+    font-size:24px;
+    color:#000;
+}
+.wine_pricing{
+    font-family:"Montserrat"
+    font-weight:600;
+    font-size:24px;
+}
+.wine_description{
+    width:390px;
+    color: #939393;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.add_to_cart_btn{
+    width:100%;
+    border: 1px solid #CACACA;
+    background: #000;
+    color:#fff;
+    padding:16px;
 }
 /*_____________________FOOTER_____________________________*/
 
