@@ -17,3 +17,4 @@ def create_app():
     app.register_blueprint(views, url_prefix='/')
 
     return app
+a=8
