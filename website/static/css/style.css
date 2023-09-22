@@ -135,10 +135,151 @@ body{
 }
 /*______________________MAIN______________________________*/
 
-.main{
-    margin: 0 auto;
-    width:1740px;
 
+.main{
+    position:relative;
+    margin: 0 auto;
+    height:1000px;
+    width:1200px;
+}
+.photo_container{
+    position:relative;
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+.good_honest{
+    position:absolute;
+    top:118px;
+    right:423px;
+    width: 993px;
+    color: #FFF;
+    font-family: Supply;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.good_honest_text{
+    position:absolute;
+    top:340px;
+    right:920px;
+    width: 493px;
+    height: auto;
+    color: #D6D6D6;
+    font-family: Supply;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.get_started{
+    position:relative;
+    position:absolute;
+    top:450px;
+    right:1410px;
+    color: #000;
+}
+.get_started_button{
+    position:absolute;
+    border: 1px solid #000;
+    background: #FFF;
+    display: inline-flex;
+    height: 54px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: Supply;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    flex-shrink: 0;
+
+}
+.get_started_button:hover{
+    background:black;
+    color:white;
+}
+.see_more_container{
+    top: 30px;
+    right: -240px;
+    position:relative;
+    position:absolute;
+    border-radius: 4px;
+    background: #FFF;
+    width: 300px;
+    height: 150px;
+    flex-shrink: 0;
+}
+.see_more_text{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    top: 5px;
+    right: 25px;
+    width: 240px;
+    height: 66px;
+    color: #4A4949;
+    font-family: Supply;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.see_more_click{
+    position:absolute;
+    top: 110px;
+    right: 187px;
+    color: #000;
+    font-family: Supply;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    }
+   .see_more_arrow{
+    position:absolute;
+    top: 112px;
+    right: 163px;
+    width: 20px;
+    height: 21px;
+    color: #000;
+    font-family: SF Compact;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+   }
+    .see_more_wine{
+    position:absolute;
+    top:22px;
+    right:20px;
+    width: 133.299px;
+    height: 139.423px;
+    flex-shrink: 0;
+    display:flex;
+    justify-content:flex-end;
+   }
+   .bottomright{
+    position:absolute;
+    bottom: 8px;
+    right: -180px;
+    color: #808080;
+    font-family: Supply;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
 }
 .section_headers{
     display:flex;
