@@ -18,13 +18,20 @@ body{
 }
 
 /* __________________SEARCH BAR ___________________*/
-.searchbar{
-   /* width:1740px;*/
+/*.searchbar{
+   *//* width:1740px;*//*
     display:flex;
     align-items:center;
     justify-content:space-around;
-    /*max-width: 1200px;*/
+    *//*max-width: 1200px;*//*
     margin:10px auto;
+}*/
+.width_container{
+    margin:0 auto;
+    width:1740px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 .search-div{
     width:550px;
@@ -58,7 +65,7 @@ body{
 }
 
 .phone_div{
-    width:120px;
+    width:140px;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -79,7 +86,6 @@ body{
 .navbar{
     /*width:1740px;*/
     display:flex;
-    justify-content:space-around;
     align-items:center;
     border-top:1px solid;
     border-bottom: 1px solid;
@@ -137,149 +143,80 @@ body{
 
 
 .main{
-    position:relative;
+    width:1740px;
     margin: 0 auto;
-    height:1000px;
-    width:1200px;
-}
-.photo_container{
-    position:relative;
-    position:absolute;
-    display:flex;
-    justify-content:center;
-    width: 100%;
-    height: auto;
-    flex-shrink: 0;
-    border-radius: 8px;
-}
-.good_honest{
-    position:absolute;
-    top:118px;
-    right:423px;
-    width: 993px;
-    color: #FFF;
-    font-family: Supply;
-    font-size: 70px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: capitalize;
-}
-.good_honest_text{
-    position:absolute;
-    top:340px;
-    right:920px;
-    width: 493px;
-    height: auto;
-    color: #D6D6D6;
-    font-family: Supply;
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: capitalize;
-}
-.get_started{
-    position:relative;
-    position:absolute;
-    top:450px;
-    right:1410px;
-    color: #000;
-}
-.get_started_button{
-    position:absolute;
-    border: 1px solid #000;
-    background: #FFF;
-    display: inline-flex;
-    height: 54px;
-    width: 200px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    font-family: Supply;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    flex-shrink: 0;
 
 }
-.get_started_button:hover{
-    background:black;
-    color:white;
+.intro{
+    display:grid;
+    grid-template-columns:repeat(100,1fr);
+    margin-top:65px;
+    margin-bottom:160px;
 }
-.see_more_container{
-    top: 30px;
-    right: -240px;
-    position:relative;
-    position:absolute;
-    border-radius: 4px;
-    background: #FFF;
-    width: 300px;
-    height: 150px;
-    flex-shrink: 0;
+.intro_img_div{
+   grid-column:1/3;
+   grid-row:1/2;
 }
-.see_more_text{
-    position:absolute;
-    display:flex;
+.intro_text{
+    grid-column:4 /-2;
+    grid-row:1/2;
+    align-self: end;
+    margin-bottom:160px;
+    width:1000px;
+}
+.intro_text h1{
+    font-size:70px;
+    color:#fff;
+    font-weight:700;
+    margin:0 0 30px 0;
+}
+.intro_text_p{
+    width:670px;
+    color:#D6D6D6;
+    font-size:21px;
+    font-weight:400;
+    margin:0 0 20px 0;
+}
+.get_started_button{
+    display:inline-flex;
     justify-content:center;
-    top: 5px;
-    right: 25px;
-    width: 240px;
-    height: 66px;
-    color: #4A4949;
-    font-family: Supply;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    align-items:center;
+    background:#fff;
+    color:#000;
+    font-size: 16px;
+    font-weight: 500;
+    padding:14px 45px;
+    font-family:'Supply';
 }
-.see_more_click{
+.get_started_button img{
+    padding-left:10px;
+}
+.see_more{
+    position:relative;
+    width:320px;
+    height:130px;
+    background:#fff;
+    border-radius:4px;
+    grid-column:100/-1;
+    grid-row:1/2;
+    margin:30px 30px 0 0;
+    padding:30px 15px 14px 20px;
+    font-size:18px;
+    font-weight:400;
+}
+.see_more_link{
+    text-decoration-color:#000;
+}
+.see_more_link p{
+    color:#000;
+    display:inline;
+}
+.see_more_link img{
+    padding-left:5px;
+}
+.wine_track{
     position:absolute;
-    top: 110px;
-    right: 187px;
-    color: #000;
-    font-family: Supply;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration-line: underline;
-    }
-   .see_more_arrow{
-    position:absolute;
-    top: 112px;
-    right: 163px;
-    width: 20px;
-    height: 21px;
-    color: #000;
-    font-family: SF Compact;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 350;
-    line-height: normal;
-   }
-    .see_more_wine{
-    position:absolute;
-    top:22px;
-    right:20px;
-    width: 133.299px;
-    height: 139.423px;
-    flex-shrink: 0;
-    display:flex;
-    justify-content:flex-end;
-   }
-   .bottomright{
-    position:absolute;
-    bottom: 8px;
-    right: -180px;
-    color: #808080;
-    font-family: Supply;
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: capitalize;
+    top:5%;
 }
 .section_headers{
     display:flex;
