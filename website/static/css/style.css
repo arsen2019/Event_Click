@@ -222,7 +222,6 @@ body{
     display:flex;
     justify-content:space-between;
     margin-bottom:20px;
-
 }
 .triple_container{
     padding-top:40px;
@@ -261,10 +260,11 @@ body{
 }
 .moto{
     width:350px;
-     display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: flex-end;
     border-bottom:3px solid #8B8B8B;
+    text-transform:capitalize;
 }
 .wine_card_about{
     margin-top:5px;
@@ -303,13 +303,87 @@ body{
     color:#fff;
     padding:16px;
 }
+.blog_and_news_header h1{
+    color:#8B8B8B;
+    font-size:60px!important;
+    font-weight:400;
+    margin:0;
+}
+.moto_about p{
+    width:540px;
+    color:#939393;
+    font-size:18px;
+    margin:10px 0 0 0;
+    text-transform:capitalize;
+}
+.blog_and_news_header{
+    margin:230px 0 40px 0;
+}
+.news_card_about{
+    color:#939393
+}
+.news_card_about_header p{
+    font-size:21px;
+}
+.news_card_about_header h3{
+    font-size:24px;
+    color:#000;
+    font-weight:700;
+}
+.news_description p{
+    font-size:18px;
+    text-transform:capitalize;
+}
+.see_more_btn{
+    width:200px;
+    padding:14px 45px;
+    color:#fff;
+    background:#000;
+    font-size:16px;
+    font-family:'Supply'
+}
+.about_us_header{
+    margin:180px 0 50px 0;
+}
+.about_us h1{
+    color:#8B8B8B;
+    font-size:60px!important;
+    font-weight:400;
+    margin:0;
+}
+.about_boxes_container{
+    display:flex;
+
+}
+.about_boxes{
+    flex:1;
+    padding:55px 0px;
+}
+.two_times{
+    flex:2;
+    text-align:center;
+    border-left:1px solid #D9D9D9;
+    border-right:1px solid #D9D9D9;
+}
+.numbers_for_about{
+    color: #000;
+    font-family: 'Monserrat';
+    font-size: 120px;
+    font-weight: 700;
+}
+.numbers_for_about{
+    margin:0;
+}
+.end-content{
+    text-align:right;
+}
 /*_____________________FOOTER_____________________________*/
 
 .footer{
-
     width:100%;
     background:black;
     color:#717171;
+    margin-top:130px;
 }
 .newsletter{
     width:700px;
