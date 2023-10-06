@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+{% block title %} Events {% endblock %}
+{% block head %}<script src="static/js/script.js"></script>{% endblock %}
 {% block body %}
     <div class="main">
         <div class="section_headers">
@@ -80,9 +82,13 @@
             <div class="about_us"><h1><span class="bold">Suggested </span>Guides</h1></div>
             <div class="moto_about"><p>*crafted from the heart.ocally made, sustainably crafted from grain to glass</p></div>
         </div>
-        <div class="triple_container">
-            <div class="container_cards carrousel">
-                    <div class="container_item carrousel-item"><img src="static/img/general/guide_1.png"></div>
+        <div class="slider-wrapper" id="wrapper">
+              <div class="slider_container" id="carousel">
+                  <div class="main_slider_card" id="content">
+                       <div class="slider_cards">
+                    <div class="slider_item">
+                        <img src="static/img/general/guide_1.png">
+                    </div>
                     <div class="card_about">
                        <div class="card_about_header">
                            <h3>James Bond</h3>
@@ -90,8 +96,8 @@
                        <div class="card_description"><p>*crafted from the heart.ocally made, sustainably crafted from grain to glass.</p></div>
                    </div>
             </div>
-            <div class="container_cards">
-                    <div class="container_item carrousel-item"><img src="static/img/general/guide_1.png"></div>
+                        <div class="slider_cards">
+                    <div class="slider_item"><img src="static/img/general/guide_1.png"></div>
                     <div class="card_about">
                        <div class="card_about_header">
                            <h3>James Bond</h3>
@@ -99,8 +105,8 @@
                        <div class="card_description"><p>*crafted from the heart.ocally made, sustainably crafted from grain to glass.</p></div>
                    </div>
             </div>
-            <div class="container_cards">
-                    <div class="container_item carrousel-item"><img src="static/img/general/guide_2.png"></div>
+                        <div class="slider_cards">
+                    <div class="slider_item"><img src="static/img/general/guide_2.png"></div>
                     <div class="card_about">
                        <div class="card_about_header">
                            <h3>James Bond</h3>
@@ -108,8 +114,8 @@
                        <div class="card_description"><p>*crafted from the heart.ocally made, sustainably crafted from grain to glass.</p></div>
                    </div>
             </div>
-            <div class="container_cards">
-                    <div class="container_item carrousel-item"><img src="static/img/general/guide_3.png"></div>
+                        <div class="slider_cards">
+                    <div class="slider_item"><img src="static/img/general/guide_3.png"></div>
                     <div class="card_about">
                        <div class="card_about_header">
                            <h3>James Bond</h3>
@@ -117,15 +123,10 @@
                        <div class="card_description"><p>*crafted from the heart.ocally made, sustainably crafted from grain to glass.</p></div>
                    </div>
             </div>
-
-
-        </div>
-
-
+                  </div>
+            </div>
+                  <button id="prev"><img src="static/img/icons/white_arrow.png"></button>
+                  <button id="next"><img src="static/img/icons/white_arrow.png"></button>
+          </div>
     </div>
-
-
-
-
-
 {% endblock %}
