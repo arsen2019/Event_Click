@@ -9,3 +9,6 @@ def home():
 @views.route('/events')
 def events():
     return render_template('events.html')
+@views.route('/about_wine')
+def aboutWine():
+    return render_template('about_wine.html')

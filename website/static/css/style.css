@@ -441,6 +441,137 @@ body{
 .slider_btn{
     /*display:none;*/
 }
+/*____________________ABOUT_WINE_____________________________*/
+.container_about_wine_general{
+    display:flex;
+    flex-direction:column;
+}
+.container_wine{
+    margin:5% 0 1% 0;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-auto-rows:minmax(auto,auto);
+    grid-row-gap:5%;
+    grid-gap:4%;
+
+}
+.about_wine_img{
+    display:flex;
+    justify-content:center;
+    border: 1px solid #E1E1E1;
+    background: #FBFBFB;
+}
+.about_wine_container{
+    display:flex;
+    flex-direction:column;
+}
+.about_wine_name h1{
+    display:flex;
+    margin:0;
+    color: #000;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.wine_star p{
+    color: #9B9B9B;
+    font-family: Montserrat arm;
+    font-size: 21px;
+    text-transform: lowercase;
+}
+.about_wine_price p{
+    display:flex;
+    margin:0;
+    color: #252525;
+    font-size: 24px;
+    text-transform: lowercase;
+
+}
+.about_wine_text{
+    width:1000px;
+    margin:4% 5.5% 0 0;
+}
+.about_wine_text p{
+    margin:0;
+    color: #939393;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.div_for_border{
+    display:flex;
+    justify-content:space-between;
+    border-block:1px solid #D9D9D9;
+    margin:5% 50% 0 0;
+    padding:25px 0;
+}
+.shrift{
+    color: #2C2C2C;
+    font-family: Supply;
+    font-size: 32px;
+    text-transform: capitalize;
+}
+
+.ml p{
+    margin:15px 0 15px 0;
+    color: #C01533;
+    font-size: 16px;
+    text-transform: lowercase;
+}
+.type p {
+    display:flex;
+    margin:15px 0 15px 0;
+    color: #C01533;
+    font-size: 16px;
+    text-transform: lowercase;
+}
+.type{
+    padding:0 50px;
+    border-left:1px solid #d9d9d9;
+    border-right:1px solid #d9d9d9;
+}
+.old p{
+    margin:15px 0 15px 0;
+    color: #C01533;
+    font-size: 16px;
+    text-transform: lowercase;
+}
+.about_wine_quantity{
+    display:flex;
+}
+.wine_quantity{
+    display:flex;
+    justify-content:space-around;
+    width: 92px;
+    height: 47px;
+    border: 1px solid #000;
+    flex-shrink:0;
+    margin: 4.4% 0 0;
+
+}
+.num{
+    color: #000;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.minus,.plus{
+    margin:0;
+    color: #000;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.add_to_cart_btn_shop{
+    width: 530px;
+    height: 58px;
+    flex-shrink: 0;
+    margin:4.4% 0.5%  0;
+}
+.small_wine{
+    display:flex;
+    justify-content:space-between;
+}
+/*.wine_small_img{
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}*/
+/*____________________ABOUT_WINE_____________________________*/
 /*_____________________FOOTER_____________________________*/
 
 .footer{
