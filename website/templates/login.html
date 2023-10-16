@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block title %} Login {% endblock %}
+{% block body %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages  %}
+{% for category, message in messages %}
+{% if category == 'error' %}
+<div class="error" role="alert">
+    {{ message }}
+</div>
+{% else %}
+<div class="success" role="alert">
+    {{ message }}
+</div>
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endwith %}
+<div class="main">
+    <div class="login_container">
+        <h1 class="login_h1"><span class="bold">Log</span> In</h1>
+        <form class="login_data" method="post">
+            <div class="login_form_div">
+                <label for="name">*Name</label>
+                <input class="login_input" type="text" id="name" placeholder="David Lucas" name="name">
+                <label for="email">*Email adress</label>
+                <input class="login_input" type="text" id="email" placeholder="namesurname@gmail.com" name="email">
+                <label for="password">*Password</label>
+                <input class="login_input" type="password" id="password" name="password">
+
+            </div>
+
+            <div class="login_card_footer">
+                <div class="forgot_pass">
+                    <a href="">Forgot Password?</a>
+                </div>
+                <div class="login_and_sign_up">
+                    <div class="login_btn_div">
+                        <button type="submit" class="login_btn login_page_btn">Log In</button>
+                    </div>
+                    <div class="login_btn_div">
+                        <a href="sign_up">
+                            <button type="button" class="sign_up_btn login_page_btn">Create an account</button>
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </form>
+
+
+    </div>
+</div>
+
+{% endblock %}

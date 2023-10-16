@@ -16,3 +16,4 @@ def aboutWine():
 @views.route('/about_events')
 def aboutEvents():
     return render_template('about_events.html')
+

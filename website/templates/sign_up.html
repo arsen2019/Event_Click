@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block title %} Login {% endblock %}
+{% block body %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages  %}
+{% for category, message in messages %}
+{% if category == 'error' %}
+<div class="error" role="alert">
+    {{ message }}
+</div>
+{% else %}
+<div class="success" role="alert">
+    {{ message }}
+</div>
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endwith %}
+<div class="main">
+    <div class="login_container">
+        <h1 class="login_h1"><span class="bold">Sign</span> Up</h1>
+        <form class="login_data" method="post">
+            <div class="login_form_div">
+                <label for="name">*Name</label>
+                <input class="login_input" type="text" id="name" name="name" placeholder="David Lucas">
+
+                <label for="phone">*Phone Number</label>
+                <input class="login_input" type="number" id="phone" name="phone" placeholder="+374 94 56 56 65">
+
+                <label for="email">*Email adress</label>
+                <input class="login_input" type="text" id="email" name="email" placeholder="namesurname@gmail.com">
+
+                <label for="password1">*Password</label>
+                <input class="login_input" type="password" id="password1" name="password1">
+                <label for="password2">*Password Again</label>
+                <input class="login_input" type="password" id="password2" name="password2">
+
+            </div>
+
+            <div class="login_card_footer">
+                <div class="forgot_pass">
+                    <a href="">Forgot Password?</a>
+                </div>
+                <div class="login_and_sign_up">
+                    <div class="login_btn_div">
+                        <a href="sign_up">
+                            <button class="sign_up_btn login_page_btn">Create an account</button>
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </form>
+
+
+    </div>
+</div>
+
+
+{% endblock %}

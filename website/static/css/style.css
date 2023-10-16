@@ -389,30 +389,31 @@ body{
     justify-content:space-between;
 }
 /*________________________SLIDER______________________________*/
-#content {
+
+.content {
   display: grid;
   grid-gap:20px;
   grid-auto-flow: column;
   box-sizing: border-box;
 }
-#wrapper {
+.wrapper {
   width: 200%;
   max-width: 1740px;
   position: relative;
 }
 
-#carousel {
+.carousel {
   overflow: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
 
-#carousel::-webkit-scrollbar {
+.carousel::-webkit-scrollbar {
   height: 0;
 }
 
-#prev,
-#next {
+.prev,
+.next {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -425,21 +426,15 @@ body{
   position: absolute;
   top: 70%;
 }
-
-#prev {
+.prev {
   left: 5%;
   transform: translate(-70%,0);
   transform: rotate(180deg);
   display: none;
 }
-
-
-#next {
+.next {
   right: 0;
   transform: translate(-70%, -50%);
-}
-.slider_btn{
-    /*display:none;*/
 }
 /*____________________ABOUT_WINE_____________________________*/
 .container_about_general{
@@ -538,6 +533,7 @@ body{
 }
 .about_wine_quantity{
     display:flex;
+    align-items:center;
 }
 .wine_quantity{
     display:flex;
@@ -562,18 +558,34 @@ body{
 }
 .add_to_cart_btn_shop{
     width: 530px;
-    height: 58px;
     flex-shrink: 0;
-    margin:4.4% 0.5%  0;
+
 }
 .small_wine{
     display:flex;
     justify-content:space-between;
 }
-/*.wine_small_img{
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-}*/
-/*____________________ABOUT_WINE_____________________________*/
+.custom-input{
+    display:flex;
+    height:17px;
+    align-items:center;
+    padding:15px;
+    border:1px solid;
+    margin-right:10px;
+}
+.input-btn{
+    display:flex;
+    border:none;
+    background:#fff;
+}
+.input-field{
+    text-align:center;
+    border:none;
+    padding: 5px;
+    font-size: 16px;
+    width: 40px;
+
+}
 /*--------------------ABOUT_EVENTS---------------------*/
 .container_event{
     display:flex;
@@ -626,6 +638,76 @@ font-size: 21px;
 }
 
 /*--------------------ABOUT_EVENTS---------------------*/
+/*____________________Login_________________________*/
+
+.login_container{
+    width:750px;
+    margin:100px auto 0;
+    padding:80px 96px 110px 96px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px 1px rgba(161, 161, 161, 0.25);
+}
+.login_container, .login_form_div{
+    display:grid;
+    grid-template-rows:auto;
+}
+.login_card_footer{
+    display:grid;
+    grid-row:2;
+}
+.login_h1{
+    text-align:center;
+    font-size:64px;
+    font-weight:500;
+    color:#8B8B8B;
+}
+.login_input{
+    border: 1px solid #646161;
+    font-size:16px;
+    color: #A1A1A1;
+    padding:23px 20px;
+    margin:10px 0 25px 0;
+}
+.forgot_pass{
+    display:flex;
+    justify-content:flex-end;
+    margin-bottom:50px;
+}
+.forgot_pass a{
+    text-decoration:none;
+    color:#000;
+}
+.login_and_sign_up{
+    display:flex;
+    gap:10px;
+}
+.login_page_btn{
+    font-family:'Supply';
+    display:flex;
+    font-size:16px;
+    font-weight:500;
+    border: 1px solid #000;
+    justify-content: center;
+    align-items: center;
+    padding:14px 45px;
+    width:100%;
+    cursor:pointer;
+
+}
+.login_btn_div{
+    width:50%;
+}
+.login_btn_div a{
+    text-decoration:none;
+}
+.login_btn{
+    color:#fff;
+    background:#000;
+}
+.sign_up_btn{
+    color:#000;
+    background:#fff;
+}
 /*_____________________FOOTER_____________________________*/
 
 .footer{
@@ -703,4 +785,29 @@ font-size: 21px;
 .map_site a{
     text-decoration:none;
     color:#606060
+}
+
+
+
+
+.error{
+    margin:0;
+    width:100%;
+    text-align:center;
+    padding:10px;
+    color:#fff;
+    background-color:red;
+    opacity:0;
+    transition: opacity 3s linear;
+}
+.success{
+    z-index:1001;
+    margin:0;
+    width:100%;
+    text-align:center;
+    padding:10px;
+    color:#fff;
+    background-color:green;
+    opacity:0;
+    transition: opacity 3s linear;
 }

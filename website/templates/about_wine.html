@@ -1,44 +1,115 @@
 {% extends 'base.html' %}
+{% block head %}
+<script src="static/js/script.js"></script>{% endblock %}
 {% block body %}
 <div class="main">
     <div class="container_about_general">
-    <div class="container_wine">
-        <div class="about_wine_img"><img src="static/img/wines/peregrine-rose.png"  ></div>
-        <div class="about_wine_container">
-            <div class="about_wine_name"><h1>Wine de la rose’<div class="wine_star"><p>( 4.5<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M7.14168 0.532715L5.18879 4.49233L0.819452 5.12934C0.035902 5.24299 -0.278116 6.20897 0.290107 6.76224L3.45122 9.84261L2.70356 14.194C2.56898 14.9805 3.39739 15.5697 4.09122 15.2018L8 13.1473L11.9088 15.2018C12.6026 15.5667 13.431 14.9805 13.2964 14.194L12.5488 9.84261L15.7099 6.76224C16.2781 6.20897 15.9641 5.24299 15.1805 5.12934L10.8112 4.49233L8.85832 0.532715C8.50841 -0.173079 7.49458 -0.18205 7.14168 0.532715Z" fill="#C01533"/>
-            </svg>)</p></div></h1>
-            <div class="about_wine_price"><p>120$</p></div>
+        <div class="container_wine">
+            <div class="about_wine_img"><img src="static/img/wines/peregrine-rose.png"></div>
+            <div class="about_wine_container">
+                <div class="about_wine_name">
+                    <h1>Wine de la rose’
+                        <div class="wine_star">
+                            <p>( 4.5
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                     fill="none">
+                                    <path d="M7.14168 0.532715L5.18879 4.49233L0.819452 5.12934C0.035902 5.24299 -0.278116 6.20897 0.290107 6.76224L3.45122 9.84261L2.70356 14.194C2.56898 14.9805 3.39739 15.5697 4.09122 15.2018L8 13.1473L11.9088 15.2018C12.6026 15.5667 13.431 14.9805 13.2964 14.194L12.5488 9.84261L15.7099 6.76224C16.2781 6.20897 15.9641 5.24299 15.1805 5.12934L10.8112 4.49233L8.85832 0.532715C8.50841 -0.173079 7.49458 -0.18205 7.14168 0.532715Z"
+                                          fill="#C01533"/>
+                                </svg>
+                                )
+                            </p>
+                        </div>
+                    </h1>
+                    <div class="about_wine_price"><p>120$</p></div>
+                </div>
+                <div class="about_wine_text"><p>*crafted from the heart.ocally made, sustainably crafted from grain to
+                    glass.*crafted from the heart.ocally made, sustainably crafted from grain to glass.*crafted from the
+                    heart.ocally made, sustainably crafted from grain to glass.*crafted from the heart.ocally made,
+                    sustainably crafted from grain to glass.*crafted from the heart.ocally made, sustainably crafted
+                    from grain to glass.*crafted from the heart.ocally made, sustainably crafted</p></div>
+                <div class="about_wine">
+                    <div class="div_for_border">
+                        <div class="shrift ml"><p>ml</p>0.5L</div>
+                        <div class="shrift type"><p>Type</p>sWEET</div>
+                        <div class="shrift old"><p>Old</p>20 Years Old</div>
+                    </div>
+                </div>
+
             </div>
-            <div class="about_wine_text"> <p>*crafted from the heart.ocally made, sustainably crafted from grain to glass.*crafted from the heart.ocally made, sustainably crafted from grain to glass.*crafted from the heart.ocally made, sustainably crafted from grain to glass.*crafted from the heart.ocally made, sustainably crafted from grain to glass.*crafted from the heart.ocally made, sustainably crafted from grain to glass.*crafted from the heart.ocally made, sustainably crafted</p></div>
-            <div class="about_wine">
-                <div class="div_for_border">
-                    <div class="shrift ml"><p>ml</p>0.5L</div>
-                    <div class="shrift type"><p>Type</p>sWEET</div>
-                    <div class="shrift old"><p>Old</p>20 Years Old</div>
+            <div class="small_wine">
+                <div class="wine_small_img"><img src="static/img/wines/peregrine-rose 3.png"></div>
+                <div class="wine_small_img"><img src="static/img/wines/peregrine-rose 4.png"></div>
+                <div class="wine_small_img"><img src="static/img/wines/peregrine-rose 5.png"></div>
+            </div>
+            <div class="about_wine_quantity">
+                <div class="custom-input">
+                    <button class="input-btn" id="decrement">-</button>
+                    <div class="input_container">
+                        <input type="text" class="input-field" id="numeric-input" value="1"/>
+                    </div>
+
+                    <button class="input-btn" id="increment">+</button>
+                </div>
+
+                <div class="add_to_cart_btn_shop">
+                    <button class="card_btn">Add to cart</button>
                 </div>
             </div>
-
         </div>
-        <div class="small_wine">
-            <div class="wine_small_img"><img src="static/img/wines/peregrine-rose 3.png"></div>
-            <div class="wine_small_img"><img src="static/img/wines/peregrine-rose 4.png"></div>
-            <div class="wine_small_img"><img src="static/img/wines/peregrine-rose 5.png"></div>
-        </div>
-        <div class="about_wine_quantity">
-            <div class="wine_quantity">
-                <span class="minus">-</span>
-              <span class="num">1</span>
-
-                <span class="plus">+</span>
-
+    </div>
+    <div class="slider-wrapper wrapper">
+        <div class="slider_container carousel">
+            <div class="main_slider_card content">
+                <div class="slider_cards">
+                    <div class="slider_item">
+                        <img src="static/img/general/guide_1.png">
+                    </div>
+                    <div class="card_about">
+                        <div class="card_about_header">
+                            <h3>James Bond</h3>
+                        </div>
+                        <div class="card_description"><p>*crafted from the heart.ocally made, sustainably crafted from
+                            grain to glass.</p></div>
+                    </div>
+                </div>
+                <div class="slider_cards">
+                    <div class="slider_item"><img src="static/img/general/guide_1.png"></div>
+                    <div class="card_about">
+                        <div class="card_about_header">
+                            <h3>James Bond</h3>
+                        </div>
+                        <div class="card_description"><p>*crafted from the heart.ocally made, sustainably crafted from
+                            grain to glass.</p></div>
+                    </div>
+                </div>
+                <div class="slider_cards">
+                    <div class="slider_item"><img src="static/img/general/guide_2.png"></div>
+                    <div class="card_about">
+                        <div class="card_about_header">
+                            <h3>James Bond</h3>
+                        </div>
+                        <div class="card_description"><p>*crafted from the heart.ocally made, sustainably crafted from
+                            grain to glass.</p></div>
+                    </div>
+                </div>
+                <div class="slider_cards">
+                    <div class="slider_item"><img src="static/img/general/guide_3.png"></div>
+                    <div class="card_about">
+                        <div class="card_about_header">
+                            <h3>James Bond</h3>
+                        </div>
+                        <div class="card_description"><p>*crafted from the heart.ocally made, sustainably crafted from
+                            grain to glass.</p></div>
+                    </div>
+                </div>
+                <button class="prev"><img src="static/img/icons/white_arrow.png"></button>
+                <button class="next"><img src="static/img/icons/white_arrow.png"></button>
             </div>
-            <div class="add_to_cart_btn_shop"><button class="card_btn">Add to cart </button> </div>
+
         </div>
-     </div>
+
     </div>
 </div>
-
-
 
 
 {% endblock %}
